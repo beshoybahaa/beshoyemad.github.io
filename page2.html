@@ -65,11 +65,14 @@
             document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
      }*/
     
-    let user = getCookie("firstname");
-    console.log(user);
-    document.getElementById("result1").innerHTML = localStorage.getItem("textvalue1");
-    document.getElementById("result2").innerHTML = localStorage.getItem("textvalue2");
-    document.getElementById("result3").innerHTML = localStorage.getItem("textvalue3");
-    document.getElementById("result4").innerHTML = localStorage.getItem("textvalue4");     
+    var first = getCookie("firstname");
+    var second = getCookie("secondname");
+    var email = getCookie("email");
+    var pass = getCookie("pass");
+    
+    document.getElementById("result1").innerHTML =first; //localStorage.getItem("textvalue1");
+    document.getElementById("result2").innerHTML = second;//localStorage.getItem("textvalue2");
+    document.getElementById("result3").innerHTML = email;//localStorage.getItem("textvalue3");
+    document.getElementById("result4").innerHTML = pass;//localStorage.getItem("textvalue4");     
 </script>
 </html>
